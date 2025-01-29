@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .form-container {
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>Ou contactez-nous directement par email : <strong>contact@monentreprise.com</strong></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mon Entreprise. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
